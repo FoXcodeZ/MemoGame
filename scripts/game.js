@@ -34,5 +34,5 @@ export function start() {
             BOARD.create(GLOBAL.GameLevel.hard);
             break;
     }
-     intervalId = setInterval(GUI.updateTimer, 1000);
+    intervalId = setInterval(GUI.updateTimer, 1000);
 }

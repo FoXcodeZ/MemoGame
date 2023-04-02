@@ -5,7 +5,16 @@ let deck = [];
 let cardsChosen = []
 let cardsChosenId = []
 let cardsWon = []
-
+export function areAllImagesLoaded() {
+    const gameArea = document.querySelector('.game-area');
+    const cards = gameArea.querySelectorAll('img');
+    cards.forEach(card => {
+        if(!card.loaded) {
+            return false;
+        }
+    });
+    return true;
+}
 export function createDeck(_gameLevel) {
     let sliceDeck;
     switch(_gameLevel)
@@ -57,15 +66,20 @@ export function create(_gameLevel) {
         gameArea.appendChild(rowElement);
         for (let row = 0; row < _gameLevel.rows; row++) {
             const card = document.createElement('img');
-            card.src = '../images/Card1.png';
+            card.src = GLOBAL.CARD_REVERSE;
             card.setAttribute('data-id', id.toString());
             card.addEventListener('click', flipCard);
             card.width = 100;
             card.height = 100;
+            card.loaded = false;
             rowElement.appendChild(card);
             id++;
+            card.onload = () => {
+                card.loaded = true;
+            }
         }
     }
+    while(!areAllImagesLoaded()) {}
 }
 
 export function clear() {
