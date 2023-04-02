@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style/default.css">
+    <script type="module" src="scripts/main.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="gui">
+    <h2>Score: <span id="score"></span></h2>
+    <h2>Time: <span id="time"></span></h2>
+    <h2 id="info">_</h2>
+</div>
+
+<div class="game-area-container">
+    <div class="game-area">
+    </div>
+</div>
+
+<form>
+    <label for="my-select">Select difficult level:</label>
+    <select id="my-select" name="my-select">
+        <option value="easy">Easy</option>
+        <option value="normal" selected>Normal</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button id="new-game" type="button">Start new game</button>
+</form>
+
+</body>
+</html>

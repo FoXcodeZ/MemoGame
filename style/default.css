@@ -1,0 +1,49 @@
+.game-area-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -450px;
+}
+
+.gui h2,
+.gui span {
+    margin: 0;
+    text-align: center;
+}
+
+
+.game-area {
+
+    display: block;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 600px;
+    gap: 5px;
+}
+
+.row {
+    clear: both;
+    margin-bottom: 0;
+}
+
+.row .card {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E3FDFD;
+}
