@@ -1,0 +1,8 @@
+List of images:
+- Card1.png
+- Card2.png
+- Animal01.png
+- Animal02.png
+- Animal03.png
+...
+- Animal20.png

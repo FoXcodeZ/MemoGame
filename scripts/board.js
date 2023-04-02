@@ -5,16 +5,7 @@ let deck = [];
 let cardsChosen = []
 let cardsChosenId = []
 let cardsWon = []
-export function areAllImagesLoaded() {
-    const gameArea = document.querySelector('.game-area');
-    const cards = gameArea.querySelectorAll('img');
-    cards.forEach(card => {
-        if(!card.loaded) {
-            return false;
-        }
-    });
-    return true;
-}
+
 export function createDeck(_gameLevel) {
     let sliceDeck;
     switch(_gameLevel)
@@ -79,7 +70,6 @@ export function create(_gameLevel) {
             }
         }
     }
-    while(!areAllImagesLoaded()) {}
 }
 
 export function clear() {
