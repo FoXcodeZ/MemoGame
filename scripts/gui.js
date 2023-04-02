@@ -5,13 +5,13 @@ export let playerLose = false;
 export function showLoseInfo() {
     playerLose = true;
     changeScoreInfoText("Sorry. You lost the game!");
-    setTimeout(clearScoreInfoText, 5000);
+    //setTimeout(clearScoreInfoText, 5000);
 }
 
 export function showWinInfo() {
     playerWon = true;
     changeScoreInfoText("Congratulations. You Won!");
-    setTimeout(clearScoreInfoText, 5000);
+    //setTimeout(clearScoreInfoText, 5000);
 }
 
 export function updateTimer() {
@@ -42,4 +42,5 @@ export function reset() {
     timeValue = 50;
     playerWon = false;
     playerLose = false;
+    clearScoreInfoText();
 }

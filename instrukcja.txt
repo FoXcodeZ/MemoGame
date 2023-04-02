@@ -1,0 +1,7 @@
+Gra wymaga serwera!
+Prosta instalacja serwera
+Jeśli masz node.js przejdź w konsoli (CMD, PowerShell itp.) do tego folderu i wpisz:
+pm install express
+Jak express się zainstaluje wpisz:
+node app.js
+Uruchomi się serwer, w konsoli pokaże się link, z którego możesz uruchomić grę.

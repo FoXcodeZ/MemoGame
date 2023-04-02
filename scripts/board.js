@@ -10,7 +10,6 @@ export function createDeck(_gameLevel) {
     let sliceDeck;
     switch(_gameLevel)
     {
-
         case GLOBAL.GameLevel.easy:
             sliceDeck = GLOBAL.possibleCards.slice(0, 2);
             break;
@@ -39,7 +38,6 @@ export function isGameLevelCorrect(_boardLevel)
             return false;
     }
 }
-
 
 export function create(_gameLevel) {
     const gameArea = document.querySelector('.game-area');
@@ -130,7 +128,6 @@ export function checkForMatch() {
         setTimeout(GUI.showWinInfo, 1010);
     }
 }
-
 
 export function reset() {
     deck = [];
